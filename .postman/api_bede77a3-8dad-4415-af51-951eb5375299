@@ -10,7 +10,7 @@ id = bede77a3-8dad-4415-af51-951eb5375299
 [config.relations.collections]
 rootDirectory = postman/collections
 files[] = {"id":"55850-1a7b50de-eac2-458e-94e4-343fa93542de","path":"Kubernetes_a56b0b5b-4500-4a94-b33e-43008c7998d5.json","metaData":{}}
-files[] = {"id":"55850-680ce278-bd13-4a24-84ec-ca7fae15a4c6","path":"Persons(1).json","metaData":{}}
+files[] = {"id":"55850-bd035450-1231-45e9-8842-1ae0181b311e","path":"Persons(1).json","metaData":{}}
 files[] = {"id":"55850-fc7379c4-5ac2-4c0c-a3a1-448a9c362bb5","path":"Persons.json","metaData":{}}
 
 [config.relations.collections.metaData]
