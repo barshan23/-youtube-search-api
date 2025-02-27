@@ -1,10 +1,10 @@
 {
 	"info": {
-		"_postman_id": "2157415-b308-4ea3-912e-9bb9389838cb",
+		"_postman_id": "7076f140-7d94-47ad-b35e-5e128407b1ed",
 		"name": "Persons",
 		"description": "hello world",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_uid": "55850-2157415-b308-4ea3-912e-9bb9389838cb"
+		"_uid": "55850-7076f140-7d94-47ad-b35e-5e128407b1ed"
 	},
 	"item": [
 		{
@@ -15,7 +15,7 @@
 					"item": [
 						{
 							"name": "Get Person",
-							"id": "c47ff9e0-e543-47c4-8166-b6541f7aa4aa",
+							"id": "bad29294-bab4-49bb-8554-732597b73338",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -67,15 +67,34 @@
 							},
 							"response": [
 								{
-									"id": "2580bd2b-558a-4b6b-a9b8-96a7a49f0845",
+									"id": "9beb8e80-b261-495d-a7f1-e493784a9e97",
 									"name": "Single person.",
 									"originalRequest": {
+										"auth": {
+											"type": "apikey",
+											"apikey": [
+												{
+													"key": "key",
+													"value": "x-api-key",
+													"type": "string"
+												},
+												{
+													"key": "value",
+													"value": "{{apiKey}}",
+													"type": "string"
+												},
+												{
+													"key": "in",
+													"value": "header",
+													"type": "string"
+												}
+											]
+										},
 										"method": "GET",
 										"header": [
 											{
-												"description": "Added as a part of security scheme: apikey",
-												"key": "x-api-key",
-												"value": "<API Key>"
+												"key": "Accept",
+												"value": "application/json"
 											}
 										],
 										"url": {
@@ -89,10 +108,12 @@
 											],
 											"variable": [
 												{
-													"key": "personId"
+													"key": "personId",
+													"value": "<string>"
 												}
 											]
-										}
+										},
+										"description": "Retrieves a single person."
 									},
 									"status": "OK",
 									"code": 200,
@@ -111,7 +132,7 @@
 						},
 						{
 							"name": "Update",
-							"id": "19ed1396-aa2d-49f0-95a4-113091642e49",
+							"id": "b559519c-d5dd-42d3-952e-cb2fd25248c1",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -173,19 +194,34 @@
 							},
 							"response": [
 								{
-									"id": "060fcbbb-3353-442d-b487-cf6beb57322b",
+									"id": "edb385c6-6219-4f2b-9bf5-3b5bf1731341",
 									"name": "Successfully updated.",
 									"originalRequest": {
+										"auth": {
+											"type": "apikey",
+											"apikey": [
+												{
+													"key": "key",
+													"value": "x-api-key",
+													"type": "string"
+												},
+												{
+													"key": "value",
+													"value": "{{apiKey}}",
+													"type": "string"
+												},
+												{
+													"key": "in",
+													"value": "header",
+													"type": "string"
+												}
+											]
+										},
 										"method": "PUT",
 										"header": [
 											{
 												"key": "Content-Type",
 												"value": "application/json"
-											},
-											{
-												"description": "Added as a part of security scheme: apikey",
-												"key": "x-api-key",
-												"value": "<API Key>"
 											}
 										],
 										"body": {
@@ -209,10 +245,12 @@
 											],
 											"variable": [
 												{
-													"key": "personId"
+													"key": "personId",
+													"value": "<string>"
 												}
 											]
-										}
+										},
+										"description": "Supports either full or partial updates."
 									},
 									"status": "No Content",
 									"code": 204,
@@ -225,7 +263,7 @@
 						},
 						{
 							"name": "Delete",
-							"id": "05fc8ef6-8b9f-4c71-b21c-9cc4d7dd7dd0",
+							"id": "a87deef1-27dc-4570-88ec-42b17395ac0d",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -272,17 +310,31 @@
 							},
 							"response": [
 								{
-									"id": "58a3c3f3-786b-4056-87f6-0f0488ca9704",
+									"id": "7e26cdb5-77f2-46b8-8353-08df825890fb",
 									"name": "Person deleted.",
 									"originalRequest": {
+										"auth": {
+											"type": "apikey",
+											"apikey": [
+												{
+													"key": "key",
+													"value": "x-api-key",
+													"type": "string"
+												},
+												{
+													"key": "value",
+													"value": "{{apiKey}}",
+													"type": "string"
+												},
+												{
+													"key": "in",
+													"value": "header",
+													"type": "string"
+												}
+											]
+										},
 										"method": "DELETE",
-										"header": [
-											{
-												"description": "Added as a part of security scheme: apikey",
-												"key": "x-api-key",
-												"value": "<API Key>"
-											}
-										],
+										"header": [],
 										"url": {
 											"raw": "{{baseUrl}}/persons/:personId",
 											"host": [
@@ -294,10 +346,12 @@
 											],
 											"variable": [
 												{
-													"key": "personId"
+													"key": "personId",
+													"value": "<string>"
 												}
 											]
-										}
+										},
+										"description": "Delete an individual person."
 									},
 									"status": "No Content",
 									"code": 204,
@@ -309,11 +363,11 @@
 							]
 						}
 					],
-					"id": "11c616c8-fc9a-4a78-8bd4-2683f9b5df34"
+					"id": "3eef1bab-3d9a-4865-8563-953e3154a787"
 				},
 				{
 					"name": "Add Person",
-					"id": "be1b4c37-b9b8-402c-a196-811283b32f6a",
+					"id": "14360ebf-32b0-4bdf-8b5d-560752246457",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -372,9 +426,29 @@
 					},
 					"response": [
 						{
-							"id": "2d52e14f-c556-4eb7-b836-e5cae013d42b",
+							"id": "c030f691-4190-4f38-9fdf-9a2584f2efc7",
 							"name": "Successful creation of person. hello world",
 							"originalRequest": {
+								"auth": {
+									"type": "apikey",
+									"apikey": [
+										{
+											"key": "key",
+											"value": "x-api-key",
+											"type": "string"
+										},
+										{
+											"key": "value",
+											"value": "{{apiKey}}",
+											"type": "string"
+										},
+										{
+											"key": "in",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
 								"method": "POST",
 								"header": [
 									{
@@ -382,9 +456,8 @@
 										"value": "application/json"
 									},
 									{
-										"description": "Added as a part of security scheme: apikey",
-										"key": "x-api-key",
-										"value": "<API Key>"
+										"key": "Accept",
+										"value": "application/json"
 									}
 								],
 								"body": {
@@ -405,7 +478,8 @@
 									"path": [
 										"persons"
 									]
-								}
+								},
+								"description": "Creates a new person this is a test"
 							},
 							"status": "Created",
 							"code": 201,
@@ -424,7 +498,7 @@
 				},
 				{
 					"name": "Get Persons",
-					"id": "68f30c89-595b-4aed-a94c-ddeb5272d766",
+					"id": "2032f00f-49a4-4e4d-91b6-d5a03821bc8a",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -481,15 +555,34 @@
 					},
 					"response": [
 						{
-							"id": "6c59787b-06aa-4caf-a0b9-38201d635f7a",
+							"id": "9ccaa540-f4c1-4343-a549-7b64e67a2734",
 							"name": "List of persons.",
 							"originalRequest": {
+								"auth": {
+									"type": "apikey",
+									"apikey": [
+										{
+											"key": "key",
+											"value": "x-api-key",
+											"type": "string"
+										},
+										{
+											"key": "value",
+											"value": "{{apiKey}}",
+											"type": "string"
+										},
+										{
+											"key": "in",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
 								"method": "GET",
 								"header": [
 									{
-										"description": "Added as a part of security scheme: apikey",
-										"key": "x-api-key",
-										"value": "<API Key>"
+										"key": "Accept",
+										"value": "application/json"
 									}
 								],
 								"url": {
@@ -502,17 +595,18 @@
 									],
 									"query": [
 										{
-											"description": "(Required) A query to search for persons by.",
 											"key": "query",
-											"value": "<string>"
+											"value": "<string>",
+											"description": "(Required) A query to search for persons by."
 										},
 										{
-											"description": "(Required) hello",
 											"key": "test",
-											"value": "<string>"
+											"value": "<string>",
+											"description": "(Required) hello"
 										}
 									]
-								}
+								},
+								"description": "Pulls a list of all person from the file"
 							},
 							"status": "OK",
 							"code": 200,
@@ -530,7 +624,7 @@
 					]
 				}
 			],
-			"id": "623a7eeb-2ed1-4780-8c18-255735206665"
+			"id": "1d9f38c7-a858-4f80-a78b-4b6c12dcf36f"
 		}
 	],
 	"variable": [
