@@ -1,0 +1,543 @@
+{
+	"info": {
+		"_postman_id": "2957416b-b308-4ea3-912e-9bb9389838cb",
+		"name": "Persons",
+		"description": "hello world",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "55850-2957416b-b308-4ea3-912e-9bb9389838cb"
+	},
+	"item": [
+		{
+			"name": "persons",
+			"item": [
+				{
+					"name": "{personId}",
+					"item": [
+						{
+							"name": "Get Person",
+							"id": "c47ff9e0-e543-47c4-8166-b6541f7aa4aa",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "apikey",
+									"apikey": [
+										{
+											"key": "key",
+											"value": "x-api-key",
+											"type": "string"
+										},
+										{
+											"key": "value",
+											"value": "{{apiKey}}",
+											"type": "string"
+										},
+										{
+											"key": "in",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/persons/:personId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"persons",
+										":personId"
+									],
+									"variable": [
+										{
+											"key": "personId",
+											"value": "<string>"
+										}
+									]
+								},
+								"description": "Retrieves a single person."
+							},
+							"response": [
+								{
+									"id": "2580bd2b-558a-4b6b-a9b8-96a7a49f0845",
+									"name": "Single person.",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"description": "Added as a part of security scheme: apikey",
+												"key": "x-api-key",
+												"value": "<API Key>"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/persons/:personId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"persons",
+												":personId"
+											],
+											"variable": [
+												{
+													"key": "personId"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"uuid": "be43e0c2-c817-4881-867c-3b43b50d3078"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"identifier\": \"<string>\",\n  \"firstName\": \"<string>\",\n  \"lastName\": \"<string>\",\n  \"bio\": \"<string>\",\n  \"image\": \"<string>\",\n  \"url\": \"<string>\",\n  \"title\": \"<string>\",\n  \"dateOfBirth\": \"<string>\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Update",
+							"id": "19ed1396-aa2d-49f0-95a4-113091642e49",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "apikey",
+									"apikey": [
+										{
+											"key": "key",
+											"value": "x-api-key",
+											"type": "string"
+										},
+										{
+											"key": "value",
+											"value": "{{apiKey}}",
+											"type": "string"
+										},
+										{
+											"key": "in",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"identifier\": \"<string>\",\n  \"firstName\": \"<string>\",\n  \"lastName\": \"<string>\",\n  \"bio\": \"<string>\",\n  \"image\": \"<string>\",\n  \"url\": \"<string>\",\n  \"title\": \"<string>\",\n  \"dateOfBirth\": \"<string>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/persons/:personId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"persons",
+										":personId"
+									],
+									"variable": [
+										{
+											"key": "personId",
+											"value": "<string>"
+										}
+									]
+								},
+								"description": "Supports either full or partial updates."
+							},
+							"response": [
+								{
+									"id": "060fcbbb-3353-442d-b487-cf6beb57322b",
+									"name": "Successfully updated.",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"description": "Added as a part of security scheme: apikey",
+												"key": "x-api-key",
+												"value": "<API Key>"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"identifier\": \"<string>\",\n  \"firstName\": \"<string>\",\n  \"lastName\": \"<string>\",\n  \"bio\": \"<string>\",\n  \"image\": \"<string>\",\n  \"url\": \"<string>\",\n  \"title\": \"<string>\",\n  \"dateOfBirth\": \"<string>\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/persons/:personId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"persons",
+												":personId"
+											],
+											"variable": [
+												{
+													"key": "personId"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Delete",
+							"id": "05fc8ef6-8b9f-4c71-b21c-9cc4d7dd7dd0",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "apikey",
+									"apikey": [
+										{
+											"key": "key",
+											"value": "x-api-key",
+											"type": "string"
+										},
+										{
+											"key": "value",
+											"value": "{{apiKey}}",
+											"type": "string"
+										},
+										{
+											"key": "in",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/persons/:personId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"persons",
+										":personId"
+									],
+									"variable": [
+										{
+											"key": "personId",
+											"value": "<string>"
+										}
+									]
+								},
+								"description": "Delete an individual person."
+							},
+							"response": [
+								{
+									"id": "58a3c3f3-786b-4056-87f6-0f0488ca9704",
+									"name": "Person deleted.",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [
+											{
+												"description": "Added as a part of security scheme: apikey",
+												"key": "x-api-key",
+												"value": "<API Key>"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/persons/:personId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"persons",
+												":personId"
+											],
+											"variable": [
+												{
+													"key": "personId"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					],
+					"id": "11c616c8-fc9a-4a78-8bd4-2683f9b5df34"
+				},
+				{
+					"name": "Add Person",
+					"id": "be1b4c37-b9b8-402c-a196-811283b32f6a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "key",
+									"value": "x-api-key",
+									"type": "string"
+								},
+								{
+									"key": "value",
+									"value": "{{apiKey}}",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"identifier\": \"<string>\",\n  \"firstName\": \"<string>\",\n  \"lastName\": \"<string>\",\n  \"bio\": \"<string>\",\n  \"image\": \"<string>\",\n  \"url\": \"<string>\",\n  \"title\": \"<string>\",\n  \"dateOfBirth\": \"<string>\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/persons",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"persons"
+							]
+						},
+						"description": "Creates a new person this is a test"
+					},
+					"response": [
+						{
+							"id": "2d52e14f-c556-4eb7-b836-e5cae013d42b",
+							"name": "Successful creation of person. hello world",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "x-api-key",
+										"value": "<API Key>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"identifier\": \"<string>\",\n  \"firstName\": \"<string>\",\n  \"lastName\": \"<string>\",\n  \"bio\": \"<string>\",\n  \"image\": \"<string>\",\n  \"url\": \"<string>\",\n  \"title\": \"<string>\",\n  \"dateOfBirth\": \"<string>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/persons",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"persons"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"uuid": "32a0a2ba-b317-4d23-a211-c2b696f90fd1"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"identifier\": \"<string>\",\n  \"firstName\": \"<string>\",\n  \"lastName\": \"<string>\",\n  \"bio\": \"<string>\",\n  \"image\": \"<string>\",\n  \"url\": \"<string>\",\n  \"title\": \"<string>\",\n  \"dateOfBirth\": \"<string>\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Get Persons",
+					"id": "68f30c89-595b-4aed-a94c-ddeb5272d766",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "key",
+									"value": "x-api-key",
+									"type": "string"
+								},
+								{
+									"key": "value",
+									"value": "{{apiKey}}",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/persons?query=<string>&test=<string>",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"persons"
+							],
+							"query": [
+								{
+									"key": "query",
+									"value": "<string>",
+									"description": "(Required) A query to search for persons by."
+								},
+								{
+									"key": "test",
+									"value": "<string>",
+									"description": "(Required) hello"
+								}
+							]
+						},
+						"description": "Pulls a list of all person from the file"
+					},
+					"response": [
+						{
+							"id": "6c59787b-06aa-4caf-a0b9-38201d635f7a",
+							"name": "List of persons.",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "x-api-key",
+										"value": "<API Key>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/persons?query=<string>&test=<string>",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"persons"
+									],
+									"query": [
+										{
+											"description": "(Required) A query to search for persons by.",
+											"key": "query",
+											"value": "<string>"
+										},
+										{
+											"description": "(Required) hello",
+											"key": "test",
+											"value": "<string>"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"uuid": "0e742137-40e5-4b5c-bc56-436f7a32ebab"
+								}
+							],
+							"cookie": [],
+							"body": "[\n  {\n    \"identifier\": \"<string>\",\n    \"firstName\": \"<string>\",\n    \"lastName\": \"<string>\",\n    \"bio\": \"<string>\",\n    \"image\": \"<string>\",\n    \"url\": \"<string>\",\n    \"title\": \"<string>\",\n    \"dateOfBirth\": \"<string>\"\n  },\n  {\n    \"identifier\": \"<string>\",\n    \"firstName\": \"<string>\",\n    \"lastName\": \"<string>\",\n    \"bio\": \"<string>\",\n    \"image\": \"<string>\",\n    \"url\": \"<string>\",\n    \"title\": \"<string>\",\n    \"dateOfBirth\": \"<string>\"\n  }\n]"
+						}
+					]
+				}
+			],
+			"id": "623a7eeb-2ed1-4780-8c18-255735206665"
+		}
+	],
+	"variable": [
+		{
+			"id": "7ca09b26-ea14-42a6-a499-73ae133ab4a1",
+			"key": "baseUrl",
+			"value": "{{baseUrl}}"
+		}
+	]
+}
