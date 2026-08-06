@@ -1,10 +1,10 @@
 {
 	"info": {
-		"_postman_id": "2157416-b308-4ea3-912e-9bb9389838cb",
+		"_postman_id": "f79c5539-acb7-4bff-81f2-065044e3a197",
 		"name": "Persons",
 		"description": "hello world",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_uid": "55850-2157416-b308-4ea3-912e-9bb9389838cb"
+		"_uid": "75924762-f79c5539-acb7-4bff-81f2-065044e3a197"
 	},
 	"item": [
 		{
@@ -15,7 +15,7 @@
 					"item": [
 						{
 							"name": "Get Person",
-							"id": "c47ff9e0-e543-47c4-8166-b6541f7aa4aa",
+							"id": "73bb5adc-40c5-467c-8006-40586e706fb4",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -67,7 +67,7 @@
 							},
 							"response": [
 								{
-									"id": "2580bd2b-558a-4b6b-a9b8-96a7a49f0845",
+									"id": "88456f67-53ca-4252-a2da-47b92f376e93",
 									"name": "Single person.",
 									"originalRequest": {
 										"method": "GET",
@@ -97,6 +97,7 @@
 									"status": "OK",
 									"code": 200,
 									"_postman_previewlanguage": "json",
+									"_postman_previewtype": "html",
 									"header": [
 										{
 											"key": "Content-Type",
@@ -111,7 +112,7 @@
 						},
 						{
 							"name": "Update",
-							"id": "19ed1396-aa2d-49f0-95a4-113091642e49",
+							"id": "0f0b92cc-2361-4b22-bf60-4390fb8f8ec1",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -173,7 +174,7 @@
 							},
 							"response": [
 								{
-									"id": "060fcbbb-3353-442d-b487-cf6beb57322b",
+									"id": "52d18ed2-1060-4d20-85d7-18bcbc37349b",
 									"name": "Successfully updated.",
 									"originalRequest": {
 										"method": "PUT",
@@ -217,6 +218,7 @@
 									"status": "No Content",
 									"code": 204,
 									"_postman_previewlanguage": "text",
+									"_postman_previewtype": "html",
 									"header": [],
 									"cookie": [],
 									"body": ""
@@ -225,7 +227,7 @@
 						},
 						{
 							"name": "Delete",
-							"id": "05fc8ef6-8b9f-4c71-b21c-9cc4d7dd7dd0",
+							"id": "344126e7-cee4-40cd-8db1-4504bcdd02f5",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -272,7 +274,7 @@
 							},
 							"response": [
 								{
-									"id": "58a3c3f3-786b-4056-87f6-0f0488ca9704",
+									"id": "bcd8562b-2ebf-438a-b38e-6c4302c128e1",
 									"name": "Person deleted.",
 									"originalRequest": {
 										"method": "DELETE",
@@ -302,6 +304,7 @@
 									"status": "No Content",
 									"code": 204,
 									"_postman_previewlanguage": "text",
+									"_postman_previewtype": "html",
 									"header": [],
 									"cookie": [],
 									"body": ""
@@ -309,11 +312,11 @@
 							]
 						}
 					],
-					"id": "11c616c8-fc9a-4a78-8bd4-2683f9b5df34"
+					"id": "3f6508b8-1729-4aa1-899b-fa98254dd7f9"
 				},
 				{
 					"name": "Add Person",
-					"id": "be1b4c37-b9b8-402c-a196-811283b32f6a",
+					"id": "586fe5fd-0a3e-46af-b22f-1d45d49ed53c",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -372,7 +375,7 @@
 					},
 					"response": [
 						{
-							"id": "2d52e14f-c556-4eb7-b836-e5cae013d42b",
+							"id": "323c8aa0-0ce0-4d3c-a359-a4e474093f72",
 							"name": "Successful creation of person. hello world",
 							"originalRequest": {
 								"method": "POST",
@@ -410,6 +413,7 @@
 							"status": "Created",
 							"code": 201,
 							"_postman_previewlanguage": "json",
+							"_postman_previewtype": "html",
 							"header": [
 								{
 									"key": "Content-Type",
@@ -424,7 +428,7 @@
 				},
 				{
 					"name": "Get Persons",
-					"id": "68f30c89-595b-4aed-a94c-ddeb5272d766",
+					"id": "3ba18f2d-25cd-4269-9d4b-00cf73feb0a2",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -481,7 +485,7 @@
 					},
 					"response": [
 						{
-							"id": "6c59787b-06aa-4caf-a0b9-38201d635f7a",
+							"id": "d40766ec-c465-424d-ac16-5b4b10459696",
 							"name": "List of persons.",
 							"originalRequest": {
 								"method": "GET",
@@ -517,6 +521,7 @@
 							"status": "OK",
 							"code": 200,
 							"_postman_previewlanguage": "json",
+							"_postman_previewtype": "html",
 							"header": [
 								{
 									"key": "Content-Type",
@@ -530,7 +535,7 @@
 					]
 				}
 			],
-			"id": "623a7eeb-2ed1-4780-8c18-255735206665"
+			"id": "2e65050b-c8f7-4164-b1f6-d2d12832955d"
 		}
 	],
 	"variable": [
